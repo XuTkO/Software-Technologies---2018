@@ -1,0 +1,16 @@
+function solve(array) {
+    let mass = [];
+
+    for (let line of array) {
+        let tokens = line.split(' ');
+        let command = tokens[0];
+        if(command==='add'){
+            let number = Number(tokens[1]);
+            mass.push(number);
+        } else {
+            let index = Number(tokens[1]);
+            mass.splice(index,1)
+        }
+    }
+    console.log(mass.join("\n"));
+}

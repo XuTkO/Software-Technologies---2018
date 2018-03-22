@@ -1,0 +1,8 @@
+function multiply(number) {
+    for (let i =0; i < number.length; i++){
+        if (number[i]=="Stop"){
+            break;
+        }
+        console.log(number[i]);
+    }
+}

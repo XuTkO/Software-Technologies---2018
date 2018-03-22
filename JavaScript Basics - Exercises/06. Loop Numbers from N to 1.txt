@@ -1,0 +1,7 @@
+function multiply(number) {
+    number=Number(number);
+    let a =Number(number[0]);
+    for (let i =number; i >0; i--) {
+        console.log(i)
+    }
+}

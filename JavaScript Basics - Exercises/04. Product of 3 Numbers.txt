@@ -1,0 +1,9 @@
+function multiply(number) {
+    let a =Number(number[0]);
+    let b = Number(number[1]);
+    let c = Number(number[2]);
+        if((a < 0 && b > 0 && c > 0 || b < 0 && a > 0 && c >0 || c < 0 && a > 0 && b > 0) || (a < 0 && b < 0 && c < 0))
+            return 'Negative'
+    else
+        return'Positive'
+}

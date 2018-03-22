@@ -1,0 +1,22 @@
+function solve(array) {
+    let obj = {};
+
+    for (let i = 0; i < array.length - 1; i++) {
+        let tokens = array[i].split(' ');
+        let key = tokens[0];
+        let value = tokens[1];
+
+            if(key in obj === false){
+                obj[key] = [];
+            }
+            obj[key].push(value);
+
+    }
+    let querryKey = array[array.length-1];
+
+    if(querryKey in obj){
+       console.log(obj[querryKey].join("\n"))
+    } else {
+        console.log('None')
+    }
+}

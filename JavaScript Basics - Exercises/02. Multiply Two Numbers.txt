@@ -1,0 +1,6 @@
+function multiply(number) {
+    let a =Number(number[0]);
+    let b = Number(number[1]);
+    return a*b;
+
+}
