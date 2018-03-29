@@ -1,0 +1,21 @@
+<?php
+if(isset($_GET['num1']) && isset($_GET['num2']) && isset($_GET['num2'])){
+    $num1 = intval($_GET['num1']);
+    $num2 = intval($_GET['num2']);
+    $num3 = intval($_GET['num3']);
+    if (($num1 < 0 && $num2 > 0 && $num3 > 0) || ($num2 < 0 && $num1 > 0 && $num3 > 0)
+        || ($num3 < 0 && $num1 > 0 && $num2 > 0) || ($num1 < 0 && $num2 < 0 && $num3 < 0 )){
+        echo "Negative";
+    } else {
+        echo "Positive";
+    }
+
+}
+?>
+
+<form>
+    N1: <input type="text" name="num1" />
+    N2: <input type="text" name="num2" />
+    N3: <input type="text" name="num3" />
+    <input type="submit"/>
+</form>

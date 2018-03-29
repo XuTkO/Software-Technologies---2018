@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Steps Into PHP</title>
+    <style>
+        div {
+            display: inline-block;
+            margin: 5px;
+            width: 20px;
+            height: 20px;
+        }
+    </style> 
+</head>
+<body>
+<?php
+$color = 0;
+for ($a=1; $a<=5; $a++){
+
+    for ($b=1; $b<=10; $b++){
+        echo "<div style='background-color: rgb($color,$color,$color)'></div>";
+        $color+=5;
+    }
+    $color++;
+    echo "<br>";
+
+}
+
+?>
+</body>
+</html>

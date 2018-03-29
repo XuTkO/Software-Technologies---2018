@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Steps Into PHP</title>
+
+</head>
+<body>
+    <form>
+        N: <input type="text" name="num" />
+        <input type="submit" />
+    </form>
+    <?php
+
+    if (isset($_GET['num'])){
+        $numLoops = intval($_GET['num']);
+        $fib = 0;
+        $number1 = 1;
+        $number2 = 1;
+        $number3 = $number1+$number2;
+
+        echo $number1 . " ";
+        echo $number2 . " ";
+        echo $number3 . " ";
+
+        for ($i=0; $i <$numLoops-3; $i++){
+            $fib = $number1+$number2+$number3;
+            echo $fib . " ";
+            $number1 = $number2;
+            $number2 = $number3;
+            $number3 = $fib;
+        }
+
+    }
+
+    ?>
+</body>
+</html>
